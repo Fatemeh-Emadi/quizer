@@ -1,0 +1,12 @@
+
+input{
+    width: 400px !important;
+    
+}
+body{
+    color: white;
+    background-color: rgb(167, 165, 165);
+}
+.container{
+    height: 550px !important;
+}
