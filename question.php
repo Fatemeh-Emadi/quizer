@@ -1,7 +1,7 @@
 <?php
 include "database.php";
-$questions = $db->query("SELECT * FROM question");
-$question_no = $questions->num_rows;
+$porsesh_ha = $db->query("SELECT * FROM question");
+$total = $porsesh_ha->num_rows;
 
 
 $porsesh_table = $db->query("SELECT * FROM question WHERE id=1");
@@ -44,7 +44,7 @@ $pasokh_ha = $db->query("SELECT * FROM answer WHERE question_id=1");
 
                     <div class="card">
                         <h5 class="card-header">question
-                            <?php echo $porsesh["id"]; ?>/<?php echo $question_no; ?>
+                            <?php echo $porsesh["id"]; ?>/<?php echo $total; ?>
                         </h5>
                         <div class="card-body">
 
